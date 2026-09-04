@@ -72,3 +72,5 @@ Testing/
 *.cxx
 cxx/
 
+#gradle
+.gradle/
