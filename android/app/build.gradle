@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'oblivion'//'org.khronos.OpenXRTutorialChapter2'
+    compileSdk 36
+    ndkVersion '27.2.12479018'
+
+    defaultConfig {
+        applicationId "org.TheJiggleDev.Oblivion"
+        minSdk 31
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            version '3.28.3+'
+            path '../CMakeLists.txt'
+        }
+    }
+
+    // Enable prefab support for the OpenXR AAR
+    buildFeatures {
+        prefab true
+    }
+}
+
+dependencies {
+    implementation 'org.khronos.openxr:openxr_loader_for_android:1.1.49'
+}

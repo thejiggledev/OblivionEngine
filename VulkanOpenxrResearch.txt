@@ -1,0 +1,24 @@
+Can query for any version of vulkan that is supported on device?
+
+How do we setup vulkan profiles to avoid the check and fallback system for pc/standalone?
+
+# Will be using Slang shaders
+# Will be supporting GLTF models and KTX image format.
+# Will have support for Android(apk) and Windows/Linux (exe)
+# Will build A game engine using other existing game engine frameworks.
+# - use ENTT for ecs system.
+# - Jolt physics library
+# - Using heightmaps for procederally generated terrain (big maps), and prebuilt 3d models for anything with overhang.
+# - stylized over pbr. (to help with performance/energy)
+# - Access to Quest 3s and Mac (intel) laptop for testing
+# - Using Meta renderdoc fork or snapdragon profiler.
+# - Use 0 AI generation in our project as its purely for learning and documenting. 
+
+What will I be streaming? Is there a schedule?
+
+-- Streaming game/game engine development, and pushing project updates to github and readthedocs daily if any. (Monday-Thursday)
+-- Streaming GPU Development on FPGA. (Friday)
+-- Reviewing Papers (acadamia or shortbook) or conferences (vulkanised, siggraph, HPCA) (Saturday)
+-- 3 above/Try out different VR Games/leetcode/logi-code/no stream (Sunday)
+
+
